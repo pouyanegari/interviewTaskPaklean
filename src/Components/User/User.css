@@ -1,0 +1,94 @@
+.userBox {
+  box-shadow: #d8b4fe 0px 7px 29px 0px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.userBox:hover {
+  animation: userBackgroundColor 2s infinite;
+}
+.gender {
+  font-size: 28px;
+}
+.inactivestatus {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
+.activeStatus {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #22c55e;
+}
+.userBox p {
+  margin: 0;
+}
+.btn {
+  background-color: transparent;
+  padding: 10px;
+}
+.editBtn {
+  color: #0284c7;
+  font-size: 28px;
+}
+.editBtn:hover {
+  animation: editBtnMove 5s infinite;
+}
+.deleteBtn {
+  color: #dc2626;
+  font-size: 30px;
+}
+.deleteBtn:hover {
+  animation: deleteBtnMove 2s infinite;
+}
+@keyframes deleteBtnMove {
+  50% {
+    transform: rotate(720deg);
+    scale: 1.3;
+  }
+}
+@keyframes editBtnMove {
+  20% {
+    transform: rotate(20deg);
+    scale: 1.05;
+  }
+  40% {
+    transform: rotate(-20deg);
+    scale: 1.1;
+  }
+  60% {
+    transform: rotate(10deg);
+    scale: 1.1;
+  }
+  80% {
+    transform: rotate(-10deg);
+    scale: 1.05;
+  }
+}
+@keyframes userBackgroundColor {
+  50% {
+    background-color: #f59e0b;
+  }
+}
+@media all and (max-width: 520px) {
+  .userBox {
+    font-size: 12px;
+  }
+  .gender {
+    font-size: 20px;
+  }
+  .inactivestatus {
+    width: 12px;
+    height: 12px;
+  }
+  .activeStatus {
+    width: 12px;
+    height: 12px;
+  }
+  .btn {
+    transform: scale(0.8);
+    padding: 0 !important;
+  }
+}
